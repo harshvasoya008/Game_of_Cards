@@ -1,0 +1,269 @@
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="HDV"
+        android:textSize="25dp"
+        android:id="@+id/text_cpu"
+        android:background="#ffffff"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/text_cpu"
+        android:layout_marginLeft="5dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:id="@+id/cpu_money"
+        android:background="#ffffff"/>
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:id="@+id/table"
+        android:layout_below="@+id/text_cpu"
+        android:layout_toEndOf="@+id/text_cpu"
+        android:background="#123456"/>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="50dp"
+        android:text="\?\?"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:id="@+id/cpu_card1"
+        android:layout_alignTop="@+id/table"
+        android:layout_alignStart="@+id/table" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="5dp"
+        android:text="\?\?"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:id="@+id/cpu_card2"
+        android:layout_alignTop="@+id/table"
+        android:layout_toEndOf="@+id/cpu_card1" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="5dp"
+        android:text="\?\?"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:id="@+id/cpu_card3"
+        android:layout_alignTop="@+id/table"
+        android:layout_toEndOf="@+id/cpu_card2" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="5dp"
+        android:text="\?\?"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:id="@+id/player_card1"
+        android:layout_alignBottom="@+id/table"
+        android:layout_toStartOf="@+id/cpu_card2" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="5dp"
+        android:text="\?\?"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:id="@+id/player_card2"
+        android:layout_alignBottom="@+id/table"
+        android:layout_toEndOf="@+id/player_card1" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="5dp"
+        android:text="\?\?"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:id="@+id/player_card3"
+        android:layout_alignBottom="@+id/table"
+        android:layout_toEndOf="@+id/player_card2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="You"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:id="@+id/text_player"
+        android:background="#ffffff"
+        android:layout_below="@+id/table"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:id="@+id/player_money"
+        android:background="#ffffff"
+        android:layout_below="@+id/table"
+        android:layout_toEndOf="@+id/text_player" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deal"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        android:background="#ffffff"
+        android:id="@+id/btn_deal"
+        android:layout_alignTop="@+id/player_money"
+        android:layout_alignEnd="@+id/table" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="gh"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:id="@+id/winner"
+        android:layout_alignTop="@+id/table"
+        android:layout_toEndOf="@+id/table"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/text_player"
+        android:id="@+id/fn_bar">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:text="Fold"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:id="@+id/btn_fold"
+            android:background="#2395c2"/>
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="4dp"
+            android:text="Show"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:id="@+id/btn_show"
+            android:background="#2395c2"/>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="4dp"
+            android:text="Call"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:id="@+id/btn_call"
+            android:background="#2395c2"/>
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="2dp"
+            android:text="000"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:id="@+id/call_amt"
+            android:background="#2395c2"/>
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="25dp"
+            android:text="Raise"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:id="@+id/btn_raise"
+            android:background="#2395c2"/>
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="-"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:id="@+id/minus"
+            android:background="#2395c2"/>
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="2dp"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:text="0"
+            android:gravity="center"
+            android:id="@+id/raise_amt"
+            android:background="#2395c2"/>
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="2dp"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:text="+"
+            android:id="@+id/plus"
+            android:background="#2395c2"/>
+    </TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Pot"
+        android:textSize="50sp"
+        android:textColor="#ffffff"
+        android:id="@+id/text_pot"
+        android:layout_alignBottom="@+id/cpu_card3"
+        android:layout_alignStart="@+id/pot"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="123dp"
+        android:text="0"
+        android:textSize="35sp"
+        android:textColor="#14aea1"
+        android:gravity="center"
+        android:background="@drawable/pot_shape"
+        android:id="@+id/pot"
+        android:layout_below="@+id/text_pot"
+        android:layout_toEndOf="@+id/player_card3"/>
